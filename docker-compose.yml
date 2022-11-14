@@ -1,0 +1,15 @@
+# https://int-i.github.io/sql/2021-08-21/postgres-docker-compose/
+
+version: "3"
+services:
+  db:
+    image: postgres:latest
+    container_name: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "admin"
+      POSTGRES_PASSWORD: "admin"
+    volumes:
+      -
