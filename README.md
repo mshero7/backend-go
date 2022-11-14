@@ -1,4 +1,4 @@
 # backend-go
 
-SERVER : beego
-DB(ORM) : ent framwork
+SERVER : beego  
+DB : postgresql (ent)
