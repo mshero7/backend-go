@@ -1,0 +1,11 @@
+syntax = "proto3"; // 최신 버전인 proto3를 사용한다고 명시
+
+package log.v1; // 생성된 고 코드의 패키지명으로 쓰이며, 같은 이름을 가진 메시지 자료형 사이의 충돌을 막아준다.
+
+option go_package = "github.com/mshero7/backend-go/api/log_v1";
+
+// Go 구조체와 대응이 된다. 두 문법이 비슷하며, proto 파일은 ID까지 넣어준다는 차이가 있다.
+message Record {
+  bytes value = 1;
+  uint64 offset = 2;
+}
